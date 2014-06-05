@@ -18,7 +18,7 @@ int main(int argc, const char * argv[])
         NSLog(@"\u03c0 is %.2f", M_PI);
 
         NSLocale *here = [NSLocale currentLocale];
-        NSString *currency = [here objectForKey:@"currency"];
+        NSString *currency = [here objectForKey:NSLocaleCurrencyCode];
         NSLog(@"Money is %@", currency);
         
     }
